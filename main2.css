@@ -1,0 +1,271 @@
+.nosotros {
+    width: 100%;
+    height: 95vh;
+    background-image: radial-gradient(var(--gradient1));
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    border-color: transparent transparent transparent ;
+    box-shadow: 0 -0.5rem 1rem 0rem rgba(0, 0, 0, 0.5), 0 0.5rem 1rem 0rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.nosotros h2 {
+    font-family: var(--font_t1);
+    color: var(--fontcolor_t1);
+    text-shadow: 0px 0.3rem 10px #2C3130, 0 -0.3rem 10px #2C3130;
+    font-size: 2vw;
+}
+
+
+.nosotros_contain {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "head head"
+                         "video info";
+}
+
+.nosotros_contain h2 {
+    grid-area: head;
+    transform: translateY(-5.5vh);
+    padding-bottom: 1vw;
+    text-align: center;
+    position: relative;
+    top: 5vw;
+}
+.nosotros_contain p {
+    grid-area: info;
+    text-align: justify;
+    transform: translateX(3vw) translateY(-3vw);
+    width: 70%;
+    /* background-color: rgba(138, 43, 43, 0.3); */
+}
+.imgNosotros {
+    /* background-image: url(res/5.jpg);
+    background-size: contain;
+    
+    background-repeat: no-repeat; */
+    transform: translateX(5vw) translateY(-3vw);
+    grid-area: video;
+    width: auto;
+    height: 23vw;
+    border-radius: 10%;
+    box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+.contacto {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(var(--gradient2));
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    border-color: transparent transparent transparent ;
+    box-shadow: 0 -0.5rem 1rem 0rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.contacto_contain {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "head head"
+                         "foto info";
+}
+.mapa_contain {
+    grid-area: foto;
+    height: 30vw;
+    width: 40vw;
+    align-self: center;
+    justify-self: center;
+}
+.contacto_contain h2 {
+    border-bottom-style: solid;
+    border-bottom-color: var(--gray_color);
+    grid-area: head;
+    padding-bottom: 1vw;
+    padding-left: 6vw;
+    color: var(--gray_color);
+}
+.contacto_contain h1 {
+    text-shadow: 0px 0.2rem 10px #2C3130;
+}
+
+.info_contacto {
+    grid-area: info;
+}
+.bold {
+    font-weight: bold;
+    color: black;
+    text-shadow: 0px 0.2rem 10px #2C3130;
+}
+.socialimg {
+    display: flex;   
+}
+.socialimg a .img1 {
+    margin-left: 0;    
+}
+.socialimg [class^="img"] {
+    display: flex;
+    height: auto;
+    width: 2rem;
+    margin: 1vw .5vw;
+}
+
+.info_bar .contain {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    overflow: visible;
+    /* margin-left: 10rem; */
+    animation: moving 25s infinite;
+    /* transform: translateX(74vw); */
+}
+@keyframes moving {
+    0% {transform: translateX(3%);}
+    /* 25% {margin-left: 0;}
+    75% {margin-left: +78%;} */
+    40% {transform: translateX(70%);}
+    41% {transform: translateX(70%);}
+    99% {transform: translateX(3%);}    
+    100% {transform: translateX(3%);}
+}
+
+.info_bar img, .info_bar a {
+    /* display: flex; */
+    /* height: auto; */
+    width: 3rem;
+    
+    position: relative;
+}
+
+.info_bar span {
+    position: relative;
+    font-family: var(--font_p);
+    color: var(--fontcolor_p);
+    text-shadow: #2C3130 1px 0 10px, #2C3130 2px 0 10px;
+    font-size: 1.4rem;
+    
+}
+.info_bar span ~ span {
+    position: relative;
+    text-shadow:  1px 0 10px #199610, #2C3130 2px 0 10px;
+    font-size: 1.4rem;
+}
+@media only screen and (max-width: 800px) {
+    .nosotros_contain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-areas: "head head"
+                         "video video"
+                         "info info";  
+    }
+    .nosotros_contain h2 {
+        top: 10vw;
+        font-size: 2rem;
+    }
+    .nosotros_contain p {
+        grid-area: info;
+        text-align: justify;
+        width: 70%;
+        align-self: center;
+        justify-self: center;
+        transform: none;
+        font-size: 1.2rem;
+        position: relative;
+        top: -8vw;
+    }
+    .imgNosotros {
+        /* background-image: url(res/5.jpg);
+        background-size: contain;
+        
+        background-repeat: no-repeat; */
+        transform: none;
+        align-self: center;
+        justify-self: center;
+        grid-area: video;
+        width: auto;
+        height: 45vw;
+        
+    }
+    .contacto_contain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-areas: "head head"
+                         "foto foto"
+                         "info info";  
+    }
+    .contacto_contain h1 {
+        
+        margin-bottom: 1rem;
+        position: relative;
+        font-size: 2rem;
+    }
+    .contacto_contain h2 {
+        font-size: 1.5rem;
+    }
+    .info_contacto {
+        grid-area: info;
+        text-align: left;
+        width: 80%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        transform: none;
+        font-size: 1.2rem;
+        position: relative;
+        top: -2vw;
+    }
+    
+    .mapa_contain {
+        grid-area: foto;
+        height: 90%;
+        width: 90%;
+        align-self: center;
+        justify-self: center;
+        
+    }
+    .socialimg [class^="img"] {
+        display: flex;
+        height: auto;
+        width: 2rem;
+        margin: 5vw 2vw;
+    }
+    .socialimg {
+        align-items: flex-start;
+        justify-content: start;
+    }
+    
+}
