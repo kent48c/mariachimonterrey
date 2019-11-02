@@ -11,6 +11,34 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4588b8654c.js" crossorigin="anonymous"></script>
     <title>Mariachi Monterrey Valledupar</title>
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 858109079 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-858109079"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-858109079');
+</script>
+
+<!-- Event snippet for Clic a wp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-858109079/98AcCJWX2bEBEJfplpkD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
 </head>
 <body id="inicio">
     <div  class="main_container">
@@ -27,7 +55,7 @@
                     <!-- <li class="menu_items"><a class="menu_link" href="#galeria">Galeria</a></li> -->
                     <li class="menu_items"><a class="menu_link" href="#nosotros">Nosotros</a></li>
                     <li class="menu_items"><a class="menu_link" href="#contacto">Contacto</a></li>
-                    <li class="menu_items wplink"><a class="menu_link" target="_blank" href=" https://wa.me/573015155081"><img src="res/social/w2.png" alt=""></a></li>
+                    <li class="menu_items wplink"><a class="menu_link" onclick="gtag_report_conversion()" target="_blank" href=" https://wa.me/573015155081"><img src="res/social/w2.png" alt=""></a></li>
                 </ul>
             </nav>
         </header>
@@ -35,7 +63,7 @@
         <div class="info_bar">
             <div class="contain">
                 <span>¡Cotiza con nosotros!</span>
-                <a target="_blank" href=" https://wa.me/573015155081"><img src="res/social/w2.png" alt=""></a>
+                <a target="_blank" onclick="gtag_report_conversion()" href=" https://wa.me/573015155081"><img src="res/social/w2.png" alt=""></a>
                 <span>3015155081</span>                
             </div>
         </div>
@@ -168,7 +196,7 @@
                         <a target="_blank" href="https://www.facebook.com/mariachi.monterrey.valledupar"><img class="img1" src="res/social/f.png" alt=""></a>
                         <a target="_blank" href="https://twitter.com/alverismedina"><img class="img2" src="res/social/t.png" alt=""></a>
                         <a target="_blank" href="https://www.instagram.com/mariachimonterreydevalledupar"><img class="img3" src="res/social/i.png" alt=""></a>
-                        <a target="_blank" href="https://wa.me/573015155081"><img class="img4" src="res/social/w.png" alt=""></a>
+                        <a target="_blank" onclick="gtag_report_conversion()" href="https://wa.me/573015155081"><img class="img4" src="res/social/w.png" alt=""></a>
                     </div>
                 </div>
                 
